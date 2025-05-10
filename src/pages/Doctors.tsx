@@ -23,7 +23,7 @@ const Doctors = () => {
       image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80',
       name: 'Emily Rodriguez',
       specialty: 'Pediatrics',
-      description: 'Dr. Rodriguez is passionate about children's health and has a gentle approach that puts young patients at ease.'
+      description: 'Dr. Rodriguez is passionate about children\'s health and has a gentle approach that puts young patients at ease.'
     },
     {
       image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80',
@@ -59,7 +59,7 @@ const Doctors = () => {
       image: 'https://images.unsplash.com/photo-1618498082410-b4aa22193b38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80',
       name: 'Samantha Lee',
       specialty: 'Obstetrics & Gynecology',
-      description: 'Dr. Lee provides comprehensive women's healthcare from adolescence through menopause with a special interest in minimally invasive surgery.'
+      description: 'Dr. Lee provides comprehensive women\'s healthcare from adolescence through menopause with a special interest in minimally invasive surgery.'
     }
   ];
 
