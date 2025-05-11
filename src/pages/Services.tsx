@@ -200,9 +200,9 @@ const Services = () => {
               <a href="/contact-us" className="hospital-btn-primary">
                 Contact Us
               </a>
-              <a href="/doctors" className="hospital-btn-secondary">
+              {/* <a href="/doctors" className="hospital-btn-secondary">
                 Find a Doctor
-              </a>
+              </a> */}
             </div>
           </div>
         </section>

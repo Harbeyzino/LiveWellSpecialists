@@ -38,7 +38,7 @@ const ContactInfo = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold text-hospital-blue">Address</h3>
-            <p className="text-gray-600">123 Healthcare Avenue,</p>
+            <p className="text-gray-600">123 LiveWell Avenue,</p>
             <p className="text-gray-600">Medical District, CA 90210</p>
           </div>
         </div>

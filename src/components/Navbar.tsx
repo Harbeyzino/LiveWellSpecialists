@@ -20,14 +20,14 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/b48d92d5-8f58-45ef-b6e9-3e823bd11936.png" 
+              src="/livewell/b48d92d5-8f58-45ef-b6e9-3e823bd11936.png" 
               alt="HealthCare Hospital Logo" 
               className="h-12 w-auto" 
             />
             <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-hospital-blue">HealthCare</h1>
-              <p className="text-sm text-hospital-green -mt-1">Medical Center</p>
-            </div>
+              <h1 className="text-xl font-bold text-hospital-blue">LiveWell</h1>
+              <p className="text-sm text-hospital-green -mt-1">SPECIALISTS HOSPITAL</p>
+          </div>
           </Link>
           
           {/* Desktop Navigation */}
@@ -52,7 +52,7 @@ const Navbar = () => {
             >
               Services
             </Link>
-            <Link 
+            {/* <Link 
               to="/doctors" 
               className={`text-sm font-medium transition-colors ${
                 isActive('/doctors') 
@@ -61,7 +61,7 @@ const Navbar = () => {
               }`}
             >
               Our Doctors
-            </Link>
+            </Link> */}
             <Link 
               to="/about-us" 
               className={`text-sm font-medium transition-colors ${
