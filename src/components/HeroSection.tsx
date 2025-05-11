@@ -69,8 +69,8 @@ const HeroSection = () => {
               <div className="absolute -top-6 -left-6 w-20 h-20 bg-hospital-green/20 rounded-full z-0"></div>
               <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-hospital-blue/20 rounded-full z-0"></div>
               <img 
-                src="/lovable-uploads/b48d92d5-8f58-45ef-b6e9-3e823bd11936.png" 
-                alt="HealthCare Hospital" 
+                src="/livewell/b48d92d5-8f58-45ef-b6e9-3e823bd11936.png" 
+                alt="live well specialist" 
                 className="w-64 h-auto relative z-10"
               />
             </div>
