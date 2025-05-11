@@ -52,16 +52,6 @@ const Navbar = () => {
             >
               Services
             </Link>
-            {/* <Link 
-              to="/doctors" 
-              className={`text-sm font-medium transition-colors ${
-                isActive('/doctors') 
-                  ? 'text-hospital-green border-b-2 border-hospital-green' 
-                  : 'text-gray-600 hover:text-hospital-blue'
-              }`}
-            >
-              Our Doctors
-            </Link> */}
             <Link 
               to="/about-us" 
               className={`text-sm font-medium transition-colors ${
