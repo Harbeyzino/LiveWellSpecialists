@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -24,10 +23,10 @@ const Navbar = () => {
               alt="HealthCare Hospital Logo" 
               className="h-12 w-auto" 
             />
-            <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-hospital-blue">LiveWell</h1>
-              <p className="text-sm text-hospital-green -mt-1">SPECIALISTS HOSPITAL</p>
-          </div>
+            <div className="md:block">
+              <h1 className="text-lg md:text-xl font-bold text-hospital-blue">LiveWell</h1>
+              <p className="text-[10px] md:text-xs font-bold font-serif text-hospital-green -mt-1">SPECIALISTS HOSPITAL</p>
+            </div>
           </Link>
           
           {/* Desktop Navigation */}
@@ -82,6 +81,16 @@ const Navbar = () => {
             >
               Contact Us
             </Link>
+            <Link 
+              to="" 
+              className={`text-sm font-medium transition-colors ${
+                isActive('/about-us') 
+                  ? 'text-hospital-green border-b-2 border-hospital-green' 
+                  : 'text-gray-600 hover:text-hospital-blue'
+              }`}
+            >
+              Blog
+            </Link>
           </div>
           
           {/* Emergency Contact */}
@@ -91,6 +100,7 @@ const Navbar = () => {
               <span>1-800-HEALTH</span>
             </div>
           </div>
+          
           
           {/* Mobile Menu Button */}
           <button 
@@ -142,6 +152,7 @@ const Navbar = () => {
               >
                 Our Doctors
               </Link> */}
+  
               <Link 
                 to="/about-us" 
                 className={`text-sm font-medium py-2 ${
@@ -163,6 +174,17 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact Us
+              </Link>
+              <Link 
+                to="/about-us" 
+                className={`text-sm font-medium py-2 ${
+                  isActive('/') 
+                    ? 'text-hospital-green border-l-4 border-hospital-green pl-2' 
+                    : 'text-gray-600 hover:text-hospital-blue'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
               </Link>
               <div className="bg-hospital-blue text-white px-4 py-2 rounded-md inline-block mt-2">
                 <span className="font-bold mr-2">Emergency:</span>
