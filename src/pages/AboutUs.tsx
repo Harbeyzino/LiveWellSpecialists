@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -10,6 +10,8 @@ const AboutUs = () => {
     { number: '150+', label: 'Experienced Doctors' },
     { number: '50+', label: 'Medical Specialties' }
   ];
+
+  const [showFullMission, setShowFullMission] = useState(false);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -31,15 +33,22 @@ const AboutUs = () => {
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center">
               <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                <h2 className="text-3xl font-bold text-hospital-blue mb-4">Our Story</h2>
+                {/* <h2 className="text-3xl font-bold text-hospital-blue mb-4">Our Story</h2> */}
                 <p className="text-gray-600 mb-4">
-                  HealthCare Hospital was established in 1998 with a vision to provide accessible, high-quality healthcare to our community. What began as a small clinic has grown into a comprehensive medical center offering a wide range of specialized services.
+                  <span className="font-bold">LiveWell Multi-Specialists Hospital – The Citadel of Precision & Expertise.</span><br />
+                  <span className="text-hospital-green italic">...Your Health, Our Priority!</span>
                 </p>
                 <p className="text-gray-600 mb-4">
-                  Over the years, we have continuously evolved and expanded our facilities and services to meet the changing healthcare needs of our growing community. We have invested in cutting-edge technology and attracted top medical talent to ensure we provide the best possible care to our patients.
+                  LiveWell Multi-Specialists Hospital is the citadel of Precision and Expertise built on strong professional base as the top clinically ranked hospital with proofs of accurate diagnosis and passionate healthcare serving the medical and surgical needs of people from different parts and Nigeria.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Livewell is a place where medical doctors from different specialties meet with the aim of providing various standard health services covering general Surgeries, internal medicine, Obstetrics &amp; Gynecology, Orthopedic surgery, Pediatric Surgery, Neurosurgery, Neurology, Urology, Cardiology, Pediatrics, elderly care, radio outreaches etc.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  At LiveWell Multi-Specialists Hospital, we pride ourselves on being your trusted healthcare provider, offering top-tier medical and surgical services. From routine checkups to specialized treatments, we handle all medical and surgical cases with the utmost care and professionalism in fairness to God and humanity.
                 </p>
                 <p className="text-gray-600">
-                  Today, HealthCare Hospital stands as a testament to our founding vision and our ongoing commitment to excellence in healthcare. We are proud to be a trusted healthcare provider for thousands of patients each year.
+                  Our team of highly trained and board certified doctors, nurses, and other health professionals is highly dedicated to providing the best standard care for you and your loved ones. Whether it’s a minor ailment or a complex medical or surgical condition, we are fully equipped to handle any of your health challenges with precision and compassionate expertise.
                 </p>
               </div>
               <div className="w-full md:w-1/2">
@@ -62,32 +71,54 @@ const AboutUs = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="hospital-card p-6">
-                <div className="bg-hospital-blue/20 p-3 rounded-full inline-block mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-hospital-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-hospital-blue">Our Mission</h3>
-                <p className="text-gray-600">
-                  To provide exceptional healthcare services with compassion and excellence, improving the health and well-being of the communities we serve.
-                </p>
-              </div>
-              
-              <div className="hospital-card p-6">
+              {/* Vision */}
+              <div className="hospital-card p-6 md:col-span-1">
                 <div className="bg-hospital-green/20 p-3 rounded-full inline-block mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-hospital-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-hospital-green">Our Vision</h3>
+                <h3 className="text-xl font-semibold mb-2 text-hospital-green">Vision</h3>
                 <p className="text-gray-600">
-                  To be the healthcare provider of choice, recognized for our clinical excellence, exceptional patient experience, and innovative approach to medicine.
+                  To be the comprehensive one stop private health facility offering basic and advanced specialist medical &amp; surgical care that is efficient, affordable, bespoke and comparable with international best practices.
                 </p>
               </div>
-              
-              <div className="hospital-card p-6">
+              {/* Mission */}
+              <div className="hospital-card p-6 md:col-span-1">
+                <div className="bg-hospital-blue/20 p-3 rounded-full inline-block mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-hospital-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-hospital-blue">Mission</h3>
+                <ol className="text-gray-600 list-decimal list-inside space-y-2">
+                  <li>
+                    To serve as a multi-specialist hospital for the specialized care of patients; curative and promotive health, research and training with full implementation of a holistic medical and surgical education programmes for sustainable national and global development.
+                  </li>
+                  {showFullMission && (
+                    <>
+                      <li>
+                        To provide Comprehensive Medical, Surgical, Nursing services to all the patients visiting this hospital and also run a diagnostic centre with precision, covering all laboratory and blood bank services in line with standard practice both nationally and globally.
+                      </li>
+                      <li>
+                        To offer world class medical &amp; surgical services to Nigerians thereby stopping medical tourism by Nigerians to foreign countries and also provide a friendly atmosphere for the care of all discerning patients without discrimination.
+                      </li>
+                      <li>
+                        To be the leading private healthcare institution of choice for patients, physicians and employees in the country by providing world class services thereby curbing the migration of specialists and domesticating world class practices and cultures here in Nigeria.
+                      </li>
+                    </>
+                  )}
+                </ol>
+                <button
+                  className="mt-4 text-hospital-blue underline focus:outline-none"
+                  onClick={() => setShowFullMission((prev) => !prev)}
+                >
+                  {showFullMission ? 'Read Less' : 'Read More'}
+                </button>
+              </div>
+              {/* Values */}
+              <div className="hospital-card p-6 md:col-span-1">
                 <div className="bg-hospital-blue/20 p-3 rounded-full inline-block mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-hospital-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />

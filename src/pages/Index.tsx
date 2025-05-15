@@ -1,4 +1,3 @@
-
 import React from 'react';
 import HeroSection from '@/components/HeroSection';
 import ServiceCard from '@/components/ServiceCard';
@@ -17,7 +16,6 @@ const Index = () => {
       ),
       title: 'Cardiology',
       description: 'Comprehensive diagnosis and treatment of cardiovascular conditions by expert cardiologists using advanced technology.',
-      link: '/services'
     },
     {
       icon: (
@@ -27,7 +25,6 @@ const Index = () => {
       ),
       title: 'Neurology',
       description: 'Specialized care for neurological disorders including stroke, seizures, headaches, and neurodegenerative diseases.',
-      link: '/services'
     },
     {
       icon: (
@@ -37,7 +34,6 @@ const Index = () => {
       ),
       title: 'Pediatrics',
       description: 'Comprehensive healthcare for children from birth through adolescence, including routine check-ups and specialized care.',
-      link: '/services'
     }
   ];
 
@@ -89,7 +85,6 @@ const Index = () => {
                   icon={service.icon}
                   title={service.title}
                   description={service.description}
-                  link={service.link}
                 />
               ))}
             </div>

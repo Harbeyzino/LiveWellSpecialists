@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, MapPin, Mail, Clock } from 'lucide-react';
 
@@ -12,8 +11,8 @@ const ContactInfo = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold text-hospital-blue">Phone</h3>
-            <p className="text-gray-600 mb-1">Emergency: +1 (800) 123-4567</p>
-            <p className="text-gray-600">Reception: +1 (800) 765-4321</p>
+            <p className="text-gray-600 mb-1">Emergency: +234 (903) 633 4502</p>
+            {/* <p className="text-gray-600">Reception: +234 (800) 765-4321</p> */}
           </div>
         </div>
       </div>
@@ -25,8 +24,8 @@ const ContactInfo = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold text-hospital-green">Email</h3>
-            <p className="text-gray-600 mb-1">info@healthcarehospital.com</p>
-            <p className="text-gray-600">support@healthcarehospital.com</p>
+            <p className="text-gray-600 mb-1">livewellmsh1@gmail.com</p>
+            {/* <p className="text-gray-600">support@healthcarehospital.com</p> */}
           </div>
         </div>
       </div>
@@ -38,8 +37,9 @@ const ContactInfo = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold text-hospital-blue">Address</h3>
-            <p className="text-gray-600">123 LiveWell Avenue,</p>
-            <p className="text-gray-600">Medical District, CA 90210</p>
+            <p className="text-gray-600 text-sm">
+              Plot 6 & 8, Christ Chapel Street, Christ Chapel Bus Stop, Opp EXDOUS Filling Station, ADABOL Junction Ashi Road, Bodija, Ibadan., Ibadan, Nigeria.
+            </p>
           </div>
         </div>
       </div>
@@ -51,9 +51,9 @@ const ContactInfo = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold text-hospital-green">Working Hours</h3>
-            <p className="text-gray-600 mb-1">Monday - Friday: 8:00 AM - 8:00 PM</p>
-            <p className="text-gray-600 mb-1">Saturday: 9:00 AM - 5:00 PM</p>
-            <p className="text-gray-600">Sunday: Emergency Only</p>
+            <p className="text-gray-600 mb-1">Monday - Sunday: Always Open</p>
+            {/* <p className="text-gray-600 mb-1">Saturday: Always Open</p>
+            <p className="text-gray-600">Sunday: Always Open</p> */}
           </div>
         </div>
       </div>

@@ -25,7 +25,8 @@ const Navbar = () => {
             />
             <div className="md:block">
               <h1 className="text-lg md:text-xl font-bold text-hospital-blue">LiveWell</h1>
-              <p className="text-[10px] md:text-xs font-bold font-serif text-hospital-green -mt-1">SPECIALISTS HOSPITAL</p>
+              <p className="text-[10px] md:text-xs font-bold font-serif text-hospital-green -mt-1">Multi-Specialists</p>
+              <p className="text-[20px] xs:text-[24px] sm:text-[20px] md:text-lg font-bold font-serif text-hospital-green -mt-1">Hospital</p>
             </div>
           </Link>
           
@@ -95,10 +96,16 @@ const Navbar = () => {
           
           {/* Emergency Contact */}
           <div className="hidden md:flex items-center">
-            <div className="bg-hospital-blue text-white px-4 py-2 rounded-md flex items-center">
-              <span className="font-bold mr-2">Emergency:</span>
-              <span>1-800-HEALTH</span>
-            </div>
+            <button
+              onClick={() => window.open('tel:+2349036334502')}
+              className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded focus:outline-none transition-colors"
+              aria-label="Call Emergency Number"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.518 2.073a2 2 0 01-.45 1.947l-1.1 1.1a16.001 16.001 0 006.586 6.586l1.1-1.1a2 2 0 011.947-.45l2.073.518A2 2 0 0121 18.72V21a2 2 0 01-2 2h-1C9.163 23 1 14.837 1 5V4a2 2 0 012-2z" />
+              </svg>
+              <span className="font-bold">Call Emergency</span>
+            </button>
           </div>
           
           
@@ -186,10 +193,16 @@ const Navbar = () => {
               >
                 Blog
               </Link>
-              <div className="bg-hospital-blue text-white px-4 py-2 rounded-md inline-block mt-2">
-                <span className="font-bold mr-2">Emergency:</span>
-                <span>1-800-HEALTH</span>
-              </div>
+              <button
+                onClick={() => window.open('tel:+2349036334502')}
+                className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded focus:outline-none transition-colors"
+                aria-label="Call Emergency Number"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.518 2.073a2 2 0 01-.45 1.947l-1.1 1.1a16.001 16.001 0 006.586 6.586l1.1-1.1a2 2 0 011.947-.45l2.073.518A2 2 0 0121 18.72V21a2 2 0 01-2 2h-1C9.163 23 1 14.837 1 5V4a2 2 0 012-2z" />
+                </svg>
+                <span className="font-bold">Call Emergency</span>
+              </button>
             </div>
           </div>
         )}

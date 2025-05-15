@@ -102,22 +102,20 @@ const Footer = () => {
             <div className="space-y-4 text-sm">
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-hospital-light-blue mr-2 flex-shrink-0 mt-0.5" />
-                <p className="text-gray-400">123 LiveWell Avenue, Medical District, CA 90210</p>
+                <p className="text-gray-400">Plot 6 & 8, Christ Chapel Street, Christ Chapel Bus Stop, Opp EXDOUS Filling Station, ADABOL Junction Ashi Road, Bodija, Ibadan., Ibadan, Nigeria</p>
               </div>
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <Phone className="h-5 w-5 text-hospital-light-green mr-2" />
                 <p className="text-gray-400">+1 (800) LiveWell</p>
-              </div>
+              </div> */}
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-hospital-light-blue mr-2" />
-                <p className="text-gray-400">info@LiveWellSpecialistshospital.com</p>
+                <p className="text-gray-400">livewellmsh1@gmail.com</p>
               </div>
               <div className="flex items-start">
                 <Clock className="h-5 w-5 text-hospital-light-green mr-2 flex-shrink-0 mt-0.5" />
                 <p className="text-gray-400">
-                  Monday - Friday: 8:00 AM - 8:00 PM<br />
-                  Saturday: 9:00 AM - 5:00 PM<br />
-                  Sunday: Emergency Only
+                  Monday - Sunday: Always Open
                 </p>
               </div>
             </div>

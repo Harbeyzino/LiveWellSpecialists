@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -192,7 +191,7 @@ const ContactUs = () => {
                 <div className="rounded-lg overflow-hidden shadow-lg h-[400px] bg-gray-200">
                   <iframe
                     title="Hospital Location"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1952405236277!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzI5LjYiTiAxMjLCsDI1JzA5LjgiVw!5e0!3m2!1sen!2sus!4v1623756945484!5m2!1sen!2sus"
+                    src="https://www.google.com/maps?q=Plot+6+%26+8,+Christ+Chapel+Street,+Christ+Chapel+Bus+Stop,+Opp+EXDOUS+Filling+Station,+ADABOL+Junction+Ashi+Road,+Bodija,+Ibadan,+Nigeria&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -202,8 +201,8 @@ const ContactUs = () => {
                 </div>
                 <div className="mt-6 bg-white p-4 rounded-lg shadow-md">
                   <h3 className="font-semibold text-hospital-blue mb-2">Finding Us</h3>
-                  <p className="text-gray-600 text-sm">
-                    Our hospital is located in the heart of the Medical District, easily accessible by car and public transportation. We offer complimentary parking for all patients and visitors in the parking structure adjacent to the main building.
+                  <p className="text-gray-600 text-sm font-semibold">
+                    Plot 6 & 8, Christ Chapel Street, Christ Chapel Bus Stop, Opp EXDOUS Filling Station, ADABOL Junction Ashi Road, Bodija, Ibadan., Ibadan, Nigeria.
                   </p>
                 </div>
               </div>
@@ -247,7 +246,7 @@ const ContactUs = () => {
               <div className="hospital-card p-6">
                 <h3 className="text-lg font-semibold text-hospital-blue mb-2">How do I schedule an appointment?</h3>
                 <p className="text-gray-600">
-                  You can schedule an appointment by calling our appointment line at (800) 123-4567, through our patient portal, or by filling out the appointment request form on this website.
+                  You can schedule an appointment by calling our appointment line at +2349036334502, through our patient portal, or by filling out the appointment request form on this website.
                 </p>
               </div>
             </div>
@@ -255,7 +254,7 @@ const ContactUs = () => {
             <div className="text-center mt-8">
               <p className="text-gray-600">
                 Have more questions? Feel free to{" "}
-                <a href="tel:+18001234567" className="text-hospital-blue hover:underline">
+                <a href="tel:+2349036334502" className="text-hospital-blue hover:underline">
                   call us
                 </a>
                 {" "}or{" "}
